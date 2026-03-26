@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+h1 {
+
+    text-align: center;
+}
+
+button {
+
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+#submit {
+    width: fit-content;
+    font-size: medium;
+}
+
+#what {
+
+    text-align: left;
+}
