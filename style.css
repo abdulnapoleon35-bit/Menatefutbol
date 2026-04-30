@@ -25,3 +25,24 @@ button {
 
     text-align: left;
 }
+
+.hai {
+
+    width: 10em;
+    padding: 50px;
+    height: 5em;
+    text-align: center;
+    
+}
+
+.box {
+
+    text-align: left;
+    
+}
+
+.choice {
+    
+    display: block;
+    padding: 7px;
+}
