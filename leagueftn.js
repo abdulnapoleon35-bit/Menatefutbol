@@ -1,24 +1,8 @@
-let zone = document.querySelectorAll("zone");
-let zonetext = document.querySelectorAll("zonetext");
-
-zone.forEach(function(zn) {
-
-  zn.addEventListener("click", function() {
-
-    let zoneh = zn.dataset.text;
-
-    
-
-      
-  });
-});
-
 let team = document.querySelectorAll(".team");
-let position = document.querySelectorAll(".position")
+let position = document.querySelectorAll(".position");
+let undo = document.getElementById("undo");
 
 let index = 0;
-let standw = 1;
-let stande = 1;
 
 team.forEach(function(btn) {
 
@@ -58,9 +42,8 @@ team.forEach(function(btn) {
 
             } else {
 
-                position[index].innerText = standw + "." + text;
+                position[index].innerText = text;
                 index ++;
-                standw ++;
                 
             }
 
@@ -85,25 +68,21 @@ team.forEach(function(btn) {
 
             } else {
 
-                position[index].innerText = stande + "." + text;
-                index ++;
-                stande ++;
+                position[index].innerText = text;
+                index++;
                 
             }
 
             } 
 
         }
-
-
-
-            
-
-        
-
-
-
     });
+});
+
+undo.addEventListener("click", function() {
+
+    index--;
+    position[index].innerHTML = "";
 });
 
     
